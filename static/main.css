@@ -1,0 +1,194 @@
+/**
+ * Custom CSS
+ */
+ a {
+    color: #0097A7;
+}
+.look-form{
+    margin-top:20px;
+    margin-top:2rem;
+    margin-bottom:20px;
+    margin-bottom:2rem;
+    display: flex
+}
+.look-form label {
+    display:block;
+    font-weight:bold
+}
+.look-form input[type="text"] {
+    width:100%;
+    display:block;
+    border-radius:3px 0 0 3px;
+    border-radius:.3rem 0 0 .3rem;
+    color:#424242;
+    background:#fff;
+    border:2px solid #E0E0E0;
+    border:.17rem solid #E0E0E0;
+    transition:border-color ease-in-out .15s;
+    padding:11px 10px;
+    padding:1.1rem 1rem;
+}
+.look-form input[type="text"]:focus {
+    border-color:#0097A7;
+    outline:0
+    box-shadow: 0 0 0 .2rem #0095A570;
+    -webkit-box-shadow: 0 0 0 .2rem #0095A570;
+}
+.look-form input[type="text"] {
+    font-family: monospace;
+}
+.look-form input[type="submit"] {
+    height: 4rem;
+    width: 7rem;
+    z-index: 2;
+    background-color: #0095A5;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    border-radius: 0 .4rem .4rem 0;
+    border: 2px solid #14854f;
+    text-align: center;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+.look-form input[type="submit"]:hover {
+    background-color: #0095A5;
+    border-color: #14854f;
+    opacity:.85
+}
+.look-form input[type="submit"]:active {
+    background-color: #0095A5;
+    border-color: #14854f;
+    opacity:.75
+}
+.look-form.error input {
+    border-color:#F50057
+}
+.console {
+    font-family: monospace;
+}
+.highlight {
+    color: #0097A7;
+}
+.look-segment {
+    border: 1px solid #E0E0E0;
+    border-top-color: rgb(224, 224, 224);
+    border-right-color: rgb(224, 224, 224);
+    border-bottom-color: rgb(224, 224, 224);
+    border-left-color: rgb(224, 224, 224);
+    border-radius: 3px;
+    border-radius: .3rem;
+    margin-top: 20px;
+    margin-top: 2rem;
+    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.look-segment > .header {
+    background: #f5f5f5;
+    padding: 10px 20px;
+    padding: 1rem 2rem;
+    box-shadow: inset 0 -1px 0 #E0E0E0;
+}
+.look-segment > .body {
+    padding: 19px 20px;
+    padding: 1.9rem 2rem;
+    word-wrap: break-word;
+}
+.look-segment > .body > :last-child, .look-segment > .body > :last-child > :last-child {
+    margin-bottom: 0;
+}
+.look-segment > .body > :first-child, .look-segment > .body > :first-child > :first-child {
+    margin-top: 0;
+}
+.look-segment.amber {
+    border-color: #FFC107;
+}
+.look-segment.amber > .header {
+    box-shadow: inset 0 -1px 0 #FFC107;
+    background: #ffeeba;
+    color: #000;
+}
+.look-segment.green {
+    border-color: #4CAF50;
+}
+.look-segment.green > .header {
+    box-shadow: inset 0 -1px 0 #4CAF50;
+    background: #c7e7c8;
+    color: #000;
+}
+.look-label {
+    display: inline-block;
+    background: #0097A7;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    border-radius: 3px;
+    border-radius: .3rem;
+    padding: 1px 4px;
+    padding: .1rem .4rem;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: inherit;
+}
+.look-table {
+    width: 100%;
+}
+.look-table td, .look-table th {
+    padding: 10px;
+}
+.look-table a > code {
+    color: #0097A7;
+}
+.literal {
+    background: rgba(0,0,0,.075);
+    color: #000;
+}
+.faq .q {
+    font-style: italic;
+    color: #0077DD;
+}
+.legend {
+    font-weight: bolder;
+    font-size: 12px;
+}
+.legend .username {
+    color: blue;
+}
+.legend .password {
+    color: orange;
+}
+.legend .rounds, .legend .time_cost {
+    color: purple;
+}
+.legend .salt {
+    color: red;
+}
+.legend .hash {
+    color: green;
+}
+pre .username {
+    border-bottom: 2px solid blue;
+    padding-bottom: 4px;
+    /*background-color: #00008030;*/
+}
+pre .password {
+    border-bottom: 2px solid orange;
+    padding-bottom: 4px;
+    /*background-color: #ffa50030;*/
+}
+pre .rounds, pre .time_cost {
+    border-bottom: 2px solid purple;
+    background-color: #80008030;
+}
+pre .salt {
+    border-bottom: 2px solid red;
+    background-color: #ff000030;
+}
+pre .hash {
+    border-bottom: 2px solid green;
+    background-color: #00800030;
+}

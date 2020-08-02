@@ -1,0 +1,13 @@
+<pre>
+{% if scheme.username %}<span class="username">{{scheme.username}}</span>:{% endif %}<span class="password">$argon2<span class="type">{{scheme.hash.type}}</span>$<span class="version">v={{scheme.hash.version}}</span>$<span class="memory_cost">m={{scheme.hash.memory_cost}}</span>,<span class="time_cost">t={{scheme.hash.rounds}}</span>,<span class="parallelism">p={{scheme.hash.parallelism}}</span>$<span class="salt">{{b64encode(scheme.hash.salt).decode()}}</span>$<span class="hash">{{b64encode(scheme.hash.checksum).decode()}}</span></span>{% if scheme.rest %}:{{scheme.rest}}{% endif %}
+</pre>
+<p class="legend">
+	{% if scheme.username %}<span class="username">Username</span>, {% endif %}
+	<span class="password">Password</span>, 
+	<span class="version">Version</span>, 
+	<span class="memory_cost">Memory Cost</span>, 
+	<span class="time_cost">Time Cost</span>, 
+	<span class="parallelism">Parallelism</span>, 
+	<span class="salt">Salt</span>, 
+	<span class="hash">Checksum</span>
+</p>

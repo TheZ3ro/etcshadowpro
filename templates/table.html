@@ -1,0 +1,123 @@
+  <h3>All shadow hash formats (MCF / PHC string format)</h3>
+  <table class="look-table" border="0">
+  <colgroup>
+    <col width="45%">
+    <col width="55%">
+  </colgroup>
+  <thead valign="bottom">
+  <tr>
+    <th>Scheme</th>
+    <th>Prefix</th>
+  </tr>
+  </thead>
+  <tbody valign="top">
+  <tr>
+    <td><code class="look-label literal">&nbsp;</code> (no prefix)</td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.des_crypt.html#passlib.hash.des_crypt"><code>des_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">_</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bsdi_crypt.html#passlib.hash.bsdi_crypt"><code>bsdi_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$1$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.md5_crypt.html#passlib.hash.md5_crypt"><code>md5_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$2$</code>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bcrypt.html#passlib.hash.bcrypt"><code>bcrypt</code></a> (original version)</td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$2a$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bcrypt.html#passlib.hash.bcrypt"><code>bcrypt</code></a> (first rev)</td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$2x$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bcrypt.html#passlib.hash.bcrypt"><code>crypt_blowfish-specific</code></a> (bugged)</td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$2y$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bcrypt.html#passlib.hash.bcrypt"><code>crypt_blowfish-specific</code></a> (fixed)</td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$2b$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bcrypt.html#passlib.hash.bcrypt"><code>bcrypt</code></a> (second rev, post 2014)</td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$3$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.nthash.html#passlib.hash.bsd_nthash"><code>bsd_nthash</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$5$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.sha256_crypt.html#passlib.hash.sha256_crypt"><code>sha256_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$6$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.sha512_crypt.html#passlib.hash.sha512_crypt"><code>sha512_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$md5$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.sun_md5_crypt.html#passlib.hash.sun_md5_crypt"><code>sun_md5_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$md5,</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.sun_md5_crypt.html#passlib.hash.sun_md5_crypt"><code>sun_md5_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$sha1$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.sha1_crypt.html#passlib.hash.sha1_crypt"><code>sha1_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$apr1$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.apr_md5_crypt.html#passlib.hash.apr_md5_crypt"><code>apr_md5_crypt</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$argon2i$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.argon2.html#passlib.hash.argon2"><code>argon2</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$argon2d$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.argon2.html#passlib.hash.argon2"><code>argon2</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$argon2id$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.argon2.html#passlib.hash.argon2"><code>argon2</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$bcrypt-sha256$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.bcrypt_sha256.html#passlib.hash.bcrypt_sha256"><code>bcrypt_sha256</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$P$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.phpass.html#passlib.hash.phpass"><code>phpass</code></a> (WordPress, Joomla)</td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$H$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.phpass.html#passlib.hash.phpass"><code>phpass</code></a> (phpBB)</td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$pbkdf2$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.pbkdf2_digest.html#passlib.hash.pbkdf2_sha1"><code>pbkdf2_sha1</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$pbkdf2-sha256$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.pbkdf2_digest.html#passlib.hash.pbkdf2_sha256"><code>pbkdf2_sha256</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$pbkdf2-sha512$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.pbkdf2_digest.html#passlib.hash.pbkdf2_sha512"><code>pbkdf2_sha512</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$p5k2$</code> (ending with =)</td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.cta_pbkdf2_sha1.html#passlib.hash.cta_pbkdf2_sha1"><code>cta_pbkdf2_sha1</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$p5k2$</code> (not ending with =)</td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.dlitz_pbkdf2_sha1.html#passlib.hash.dlitz_pbkdf2_sha1"><code>dlitz_pbkdf2_sha1</code></a></td>
+  </tr>
+  <tr>
+    <td><code class="look-label literal">$scrypt$</code></td>
+    <td><a href="https://passlib.readthedocs.io/en/stable/lib/passlib.hash.scrypt.html#passlib.hash.scrypt"><code>scrypt</code></a></td>
+  </tr>
+  </tbody>
+  </table>

@@ -1,0 +1,5 @@
+Flask
+passlib
+argon2_cffi
+bcrypt
+scrypt

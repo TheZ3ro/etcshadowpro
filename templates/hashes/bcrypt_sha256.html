@@ -1,0 +1,12 @@
+<pre>
+{% if scheme.username %}<span class="username">{{scheme.username}}</span>:{% endif %}<span class="password">$bcrypt-sha256${% if scheme.hash.version %}<span class="version">v={{scheme.hash.version}}</span>,<span class="type">t={{scheme.hash.ident.replace('$','')}}</span>,<span class="rounds">r={{scheme.hash.rounds}}</span>{% else %}<span class="type">{{scheme.hash.ident.replace('$','')}}</span>,<span class="rounds">{{scheme.hash.rounds}}</span>{% endif %}$<span class="salt">{{scheme.hash.salt}}</span>$<span class="hash">{{scheme.hash.checksum}}</span></span>{% if scheme.rest %}:{{scheme.rest}}{% endif %}
+</pre>
+<p class="legend">
+	{% if scheme.username %}<span class="username">Username</span>, {% endif %}
+	<span class="password">Password</span>, 
+	{% if scheme.hash.version %}<span class="version">Version</span>, {% endif %}
+	<span class="version">Type</span>, 
+	<span class="rounds">Rounds</span>, 
+	<span class="salt">Salt</span>, 
+	<span class="hash">Checksum</span>
+</p>

@@ -1,0 +1,10 @@
+<pre>
+{% if scheme.username %}<span class="username">{{scheme.username}}</span>:{% endif %}<span class="password">{{scheme.hash.ident}}<span class="rounds">{{b16(scheme.hash.rounds)}}</span>$<span class="salt">{{scheme.hash.salt}}</span>$<span class="hash">{{scheme.hash.checksum}}</span></span>{% if scheme.rest %}:{{scheme.rest}}{% endif %}
+</pre>
+<p class="legend">
+	{% if scheme.username %}<span class="username">Username</span>, {% endif %}
+	<span class="password">Password</span>, 
+	<span class="rounds">Rounds</span>, 
+	<span class="salt">Salt</span>, 
+	<span class="hash">Checksum</span>
+</p>

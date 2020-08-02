@@ -1,0 +1,43 @@
+  <div class="faq">
+    <h3>FAQ</h3>
+    <p>
+      <span class="q">Why?</span><br/>
+      Because I can't remember every MCF hash format and I don't want to search in the PassLib/shadow/hashcat documentation everytime. I'm lazy.
+    </p>
+    <p>
+      <span class="q">Why should I submit my passwords?</span><br/>
+      You don't need to. It's just easier to do so. You can look up the format manually.
+    </p> 
+    <p>
+      <span class="q">But what if you are logging them?</span><br/>
+      I'm not logging them.<br/>Even if I were, if your passwords are strong enought I couldn't crack them, otherwise you should feel ashamed.
+    </p> 
+    <p>
+      <span class="q">Buut why don't you make a client-side app?</span><br/>
+      I hate Javascript.
+    </p> 
+    <p>
+      <span class="q">Buuut can I see the source code?</span><br/>
+      For sure, it's on <a href="https://github.com/TheZ3ro/etcshadowpro">Github</a>
+    </p> 
+    <p>
+      <span class="q">...?</span><br/>
+      ...
+    </p> 
+    <p>
+      <span class="q">Why you don't support *insert hash*?</span><br/>
+      This website only supports hash format for common /etc/shadow hashes, if you want to analyze a generic hash you can use <a href="https://gchq.github.io/CyberChef/#recipe=Analyse_hash()">CyberChef Analyze Hash</a>.
+    </p>
+    <p>
+      <span class="q">Tell me more about the Modular Crypt Format and other Hash format</span><br/>
+      The MCF is a de-facto standard defined by the PassLib developers trying to standardize the /etc/shadow hash format across *nix distributions<br/>
+      A newer standardization attempt is the <strong>PHC string format</strong> defined for the <a href="https://password-hashing.net/">Password Hashing Competition</a> in 2016.<br/>
+      You can read more at the following links:<br/>
+  	  <ul>
+  	  	<li><a href="https://passlib.readthedocs.io/en/stable/modular_crypt_format.html">The PassLib documentation about the Modular Crypt Format</a></li>
+  	  	<li><a href="https://github.com/P-H-C/phc-string-format/blob/master/phc-sf-spec.md">The new PHC string format</a></li>
+  	  	<li><a href="https://github.com/ademarre/binary-mcf">The Binary Modular Crypt Format</a></li>  	  	
+  	  	<li><a href="https://hashcat.net/wiki/doku.php?id=example_hashes">Every hash format supported by Hashcat</a></li>
+  	  </ul>
+    </p>     
+  </div>

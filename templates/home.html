@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<title>etcshadow.pro</title>
+<link rel="stylesheet" type="text/css" href="/static/marx.min.css">
+<link rel="stylesheet" type="text/css" href="/static/main.css">
+</head>
+<body>
+<main>
+  <h1 class="console"><span class="highlight">/</span>etc<span class="highlight">/</span>shadow<span class="highlight">.pro</span></h1>
+  <p>
+    Impress your friends with your <span class="console">/etc/shadow</span> knowledge!<br/><br/>
+    This website helps you figure out the password format from <span class="console">/etc/shadow</span> files<br/>
+    <br/>
+    <form class="look-form" action="/" method="POST">
+      <input type="text" id="pwd" name="pwd" placeholder="Placeholder...">
+      <input type="submit" class="button" value="Submit">
+    </form>
+    {% if fail %}
+    <div id="failure" class="look-segment amber">
+      <div class="header">
+          {% if format %}
+            Found malformed format
+          {% else %}
+            Cannot find format
+          {% endif %}
+      </div>
+      <div class="body">
+          <p>
+            {% if format %}
+              The format used is: <span class="look-label small">{{format}}</span>.<br/>
+            {% endif %}
+              Error: {{fail}}
+          </p>
+      </div>
+    </div>
+    {% else %}
+      {% if format %}
+      <div id="success" class="look-segment green">
+        <div class="header">
+            Format decoded
+        </div>
+        <div class="body">
+            <p>The format used is: <span class="look-label small">{{format}}</span>.</p>
+            {% include 'hashes/%s.html' % scheme.name %}
+        </div>
+      </div>
+      {% endif %}
+    {% endif %}
+  </p>
+  <hr/>
+  {% include 'table.html' %}
+  <hr/>
+  {% include 'faq.html' %}
+</main>
+</body>
+</html>

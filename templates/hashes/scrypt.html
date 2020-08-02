@@ -1,0 +1,12 @@
+<pre>
+{% if scheme.username %}<span class="username">{{scheme.username}}</span>:{% endif %}<span class="password">{{scheme.hash.ident}}<span class="rounds">ln={{scheme.hash.rounds}}</span>,<span class="block_size">r={{scheme.hash.block_size}}</span>,<span class="parallelism">p={{scheme.hash.parallelism}}</span>$<span class="salt">{{b64encode(scheme.hash.salt).decode()}}</span>$<span class="hash">{{b64encode(scheme.hash.checksum).decode()}}</span></span>{% if scheme.rest %}:{{scheme.rest}}{% endif %}
+</pre>
+<p class="legend">
+	{% if scheme.username %}<span class="username">Username</span>, {% endif %}
+	<span class="password">Password</span>, 
+	<span class="rounds">Rounds (Memory and Time Cost)</span>, 
+	<span class="block_size">Block Size</span>, 
+	<span class="parallelism">Parallelism</span>, 
+	<span class="salt">Salt</span>, 
+	<span class="hash">Checksum</span>
+</p>
